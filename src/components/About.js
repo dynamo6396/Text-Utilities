@@ -30,7 +30,7 @@ export default function About(props) {
         else if(myStyle.color==='black'){
             setMyStyle({
                 color: 'white',
-                backgroundColor:'grey'
+                backgroundColor:'#042743'
             })
             setBtnText("Enable Light Mode")
         }
