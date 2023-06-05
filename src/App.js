@@ -40,14 +40,15 @@ function App() {
   }
   return (
    <>  
-   {/* <Navbar title="App" aboutText="aboutusss"/> */}
+   {/* <Navbar title="App" aboutText="aboutusss"/>  */}
    <Router>
       <Navbar title="App" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert}/>
       <div className="container">
       <Routes>
-          <Route path="/about" element= {<About /> }/>  
+           <Route path="/about" element= {<About  mode={mode}   /> }/>  
           <Route path="/" element={ <TextForm  showalert={showalert} heading="Enter the text to anlyze" mode={mode} /> }/>        
+          
       </Routes>
       </div>
    </Router>
